@@ -2,3 +2,9 @@ pynetbox
 pyats
 ntc-templates
 jmespath
+
+# 以下はベースイメージにある
+# paramiko
+# ncclient
+#
+# 確認 docker run --rm -it quay.io/ansible/ansible-runner pip freeze

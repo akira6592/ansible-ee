@@ -9,13 +9,23 @@ pip install pip --upgrade
 pip install -r requirements.txt 
 ```
 
-## ビルド
+## build
 ```
 cd builder
-ansible-builder build -t my-ee
+ansible-builder build -t ghcr.io/akira6592/my-ee
 ```
 
 ## runner のテスト
 ```
 ansible-runner run runner -p playbooks/test.yml
 ```
+
+## push
+```
+export CR_PAT=YOUR_TOKEN
+echo $CR_PAT | docker login ghcr.io -u akira6592 --password-stdin
+docker push ghcr.io/akira6592/my-ee:latest
+```
+
+参考:
+[Working with the Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
