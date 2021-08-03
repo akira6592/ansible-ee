@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: test debug
+      ansible.builtin.debug:
+        msg: "{{ greeting }}"
