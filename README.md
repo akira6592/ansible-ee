@@ -2,8 +2,9 @@
 
 ## 環境
 ```sh
-python3 -m venv ansible-ee
-source ansible-ee/bin/activate
+mkdir envs
+python3 -m venv envs/ansible-ee
+source envs/ansible-ee/bin/activate
 pip install pip --upgrade
 pip install -r requirements.txt 
 ```
