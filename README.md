@@ -10,6 +10,11 @@ pip install -r requirements.txt
 
 ## ビルド
 ```
-cd ee
+cd builder
 ansible-builder build -t my-ee
+```
+
+## runner のテスト
+```
+ansible-runner run runner -p playbooks/test.yml
 ```
