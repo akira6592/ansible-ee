@@ -1,3 +1,5 @@
+.vscode/
+envs/
 builder/context/
 builder/artifacts/
 runner/artifacts/
