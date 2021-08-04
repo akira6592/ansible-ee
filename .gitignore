@@ -1,5 +1,4 @@
 .vscode/
-envs/
 .venv/
 builder/context/
 builder/artifacts/
