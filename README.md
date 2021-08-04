@@ -2,7 +2,7 @@
 
 ## 環境
 ```sh
-mkdir envs
+mkdir .venv
 python3 -m venv .venv/ansible-ee
 source .venv/ansible-ee/bin/activate
 pip install pip --upgrade
