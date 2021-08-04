@@ -1,3 +1,10 @@
 ---
 collections:
   - cisco.ios
+  - cisco.iosxr
+  - cisco.nxos
+  - junipernetworks.junos
+  - seiko.smartcs
+  - yamaha_network.rtx
+  - yamaha_network.swx
+  - netbox.netbox
