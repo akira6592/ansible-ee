@@ -1,5 +1,4 @@
 .vscode/
 .venv/
 builder/context/
-builder/artifacts/
-runner/artifacts/
+builder/artifacts±
