@@ -1,6 +1,6 @@
 # ansible-ee
 
-Ansible Community Package プラスアルファの Execution Environment の資材。
+Ansible Community Package プラスアルファの Execution Environment をビルドするためのリソース。
 
 ## 環境
 
