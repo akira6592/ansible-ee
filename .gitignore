@@ -1,4 +1,4 @@
 .vscode/
 .venv/
-builder/context/
+build/context/
 ansible-navigator.log

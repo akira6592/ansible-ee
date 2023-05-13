@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ## build
 
 ```sh
-cd builder
+cd build
 ansible-builder build -t ghcr.io/akira6592/ansible-ee
 # または
 # ansible-navigator builder build -t localhost/ansible-ee

@@ -18,6 +18,7 @@ dependencies:
     - ntc-templates==3.3.0
     - jmespath==1.0.1
     - ansible-pylibssh==1.1.0
+    - netaddr==0.8.0
   # python_interpreter:
   #   package_system: "python310"
   #   python_path: "/usr/bin/python3.10"
