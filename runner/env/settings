@@ -1,5 +1,0 @@
----
-process_isolation: true
-process_isolation_executable: docker
-# container_image: my-ee
-container_image: ghcr.io/akira6592/my-ee
