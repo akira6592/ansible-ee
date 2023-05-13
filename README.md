@@ -1,6 +1,9 @@
 # ansible-ee
 
+Ansible Community Package プラスアルファの Execution Environment の資材。
+
 ## 環境
+
 ```sh
 mkdir .venv
 python3 -m venv .venv
@@ -10,21 +13,20 @@ pip install -r requirements.txt
 ```
 
 ## build
-```
-cd builder
-ansible-builder build -t ghcr.io/akira6592/my-ee
-```
 
-## runner のテスト
-```
-ansible-runner run runner -p playbooks/test.yml
+```sh
+cd builder
+ansible-builder build -t ghcr.io/akira6592/ansible-ee
+# または
+# ansible-navigator builder build -t localhost/ansible-ee
 ```
 
 ## push
+
 ```
 export CR_PAT=YOUR_TOKEN
 echo $CR_PAT | docker login ghcr.io -u akira6592 --password-stdin
-docker push ghcr.io/akira6592/my-ee:latest
+docker push ghcr.io/akira6592/ansible-ee:latest
 ```
 
 参考:
