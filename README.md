@@ -4,6 +4,7 @@ Ansible Community Package プラスアルファの Execution Environment の資�
 
 ## 環境
 
+### venv の場合
 ```sh
 mkdir .venv
 python3 -m venv .venv
@@ -11,6 +12,10 @@ source .venv/bin/activate
 pip install pip --upgrade
 pip install -r requirements.txt 
 ```
+
+### Dev Container の場合
+
+`.devcontainer/devcontainer.json` を利用
 
 ## build
 
