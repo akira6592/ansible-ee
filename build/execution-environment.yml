@@ -15,6 +15,8 @@ dependencies:
   #     - junipernetworks.junos
   # python: requirements.txt
   python:
+    - ansible-lint==6.16.0
+    - molecule==5.0.1
     - ntc-templates==3.3.0
     - jmespath==1.0.1
     - ansible-pylibssh==1.1.0
@@ -23,6 +25,8 @@ dependencies:
   #   package_system: "python310"
   #   python_path: "/usr/bin/python3.10"
   # system: bindep.txt
+  system:
+    - git   # ansilbe-lint で利用
 
 images:
   base_image:

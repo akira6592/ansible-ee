@@ -29,7 +29,7 @@ ansible-builder build -t ghcr.io/akira6592/ansible-ee
 ## push
 
 ```
-export CR_PAT=YOUR_TOKEN
+export CR_PAT=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
 echo $CR_PAT | docker login ghcr.io -u akira6592 --password-stdin
 docker push ghcr.io/akira6592/ansible-ee:latest
 ```
