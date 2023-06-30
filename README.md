@@ -23,7 +23,7 @@ pip install -r requirements.txt
 cd build
 ansible-builder build -t ghcr.io/akira6592/ansible-ee
 # または
-# ansible-navigator builder build -t localhost/ansible-ee
+# ansible-navigator builder build -t ghcr.io/akira6592/ansible-ee
 ```
 
 ## push
