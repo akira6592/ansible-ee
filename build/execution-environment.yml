@@ -6,14 +6,10 @@ dependencies:
     # package_pip: ansible-core==2.14.5
   ansible_runner:
     package_pip: ansible-runner==2.3.2
-  # galaxy: requirements.yml
-  # galaxy:
-  #   collections:
-  #     - cisco.ios
-  #     - cisco.iosxr
-  #     - cisco.nxos
-  #     - junipernetworks.junos
-  # python: requirements.txt
+  galaxy:
+    collections:
+      - name: paloaltonetworks.panos
+        version: 2.17.3    
   python:
     - ansible-lint==6.16.0
     - molecule==5.0.1
@@ -21,6 +17,10 @@ dependencies:
     - jmespath==1.0.1
     - ansible-pylibssh==1.1.0
     - netaddr==0.8.0
+    - pan-python
+    - pan-os-python
+    - xmltodict
+    - lxml
   # python_interpreter:
   #   package_system: "python310"
   #   python_path: "/usr/bin/python3.10"
