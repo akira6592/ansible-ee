@@ -1,3 +1,0 @@
-six
-psutil
-ansible-runner==2.3.3
