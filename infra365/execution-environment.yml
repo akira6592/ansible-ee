@@ -1,0 +1,29 @@
+---
+version: 3
+
+images:
+  # ベースイメージの指定
+  base_image:
+    # name: docker.io/redhat/ubi9:latest
+    name: quay.io/centos/centos:stream9
+
+dependencies:
+  # ansible-core の指定
+  ansible_core:
+    package_pip: ansible-core==2.15.2
+  # ansible-runner の指定
+  ansible_runner:
+    package_pip: ansible-runner
+  # コレクションの指定
+  galaxy:
+    collections:
+      - name: ansible.netcommon
+      - name: azure.azcollection
+        version: 1.17.0
+  # Pyuthon パッケージの指定        
+  python:
+    - paramiko
+    - ansible-pylibssh
+  # システムパッケージの指定
+  system:
+    - openssl

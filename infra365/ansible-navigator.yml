@@ -1,0 +1,10 @@
+---
+ansible-navigator:
+  execution-environment:
+    image: localhost/my-ee:latest
+    pull:
+      policy: tag
+  playbook-artifact:
+    enable: true
+    save-as: "{playbook_dir}/artifacts/{playbook_name}-{time_stamp}.json"
+  time-zone: Japan
